@@ -1,0 +1,231 @@
+/* ---- Connecting fonts ---- */
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('../fonts/OpenSansRegular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/OpenSansRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/OpenSansRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/OpenSansRegular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/OpenSansRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/OpenSansRegular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../fonts/OpenSansBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/OpenSansBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/OpenSansBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/OpenSansBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/OpenSansBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/OpenSansBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url('../fonts/Impact.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Impact.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Impact.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Impact.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Impact.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Impact.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+
+/* ---- Specifications ---- */
+
+body {
+  position: relative;
+  font-family: 'OpenSansRegular';
+  color: #000;
+  position: relative;
+}
+
+.body-fon {
+  background: url(../img/shutterstock_44501023.jpg) no-repeat center /cover ;
+  backdrop-filter: blur(4px);
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'OpenSansBold';
+}
+
+p {
+  font-size: 17px;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+div, p, a, span, button, form {
+  box-sizing: border-box;
+}
+
+a {
+  text-align: center;
+  color: #d41d1d;
+}
+
+a, a:hover {
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active,
+textarea, textarea:hover, textarea:focus, textarea:active {
+  outline: none;
+}
+
+.button {
+  font-family: 'OpenSansBold';
+  font-size: 14px;
+  text-transform: uppercase;
+    color: #000;
+    border-radius: 8px;
+    border: none; 
+    background: #cfb62c;
+    overflow: hidden;
+    display: inline-block;
+    outline: medium none;
+    padding: 12px 35px;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.button::after {
+    background-color: #e1e41b; 
+    left:50%;
+    top:50%;
+    height:0;
+    width:150%;
+    transform:translateY(-50%) translateX(-50%) rotate(90deg);
+    opacity:0.5;
+    position:absolute;
+    content:"";
+    transition:all 0.75s ease 0s;
+    z-index:-1;
+}
+
+.button:hover::after {
+    height: 700% !important;
+    opacity: 1;
+}
+
+ .button:hover,.button:active {
+    color: #000;
+}
+
+
+
+/* ---- Header ---- */
+
+.container {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  background: rgb(255 255 255 / 60%);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.head-foto-block {
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+
+}
+
+.head-foto {
+  object-fit: cover;
+  border: 6px solid #433d4b;
+  border-radius: 50%;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 0 25px;
+  margin-top: 15px;
+  font-size: 34px;
+  text-align: center;
+  color: #fff;
+  -webkit-text-stroke: 2px #000; 
+  text-stroke: 2px #000;
+}
+
+
+/* Презентация */
+.album {
+  width: 200px;
+}
+
+
+/* ЮТУБ СЕКЦІЯ */
+
+.youtube-section, .mail-section, .about-section {
+  margin-bottom: 10px;
+}
+
+h2{
+  padding: 0 15px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.youtube {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+}
+
+
+ /* МАЙДАНЧИК СЕКЦІЯ */
+
+.social-section {
+    margin-bottom: 10px;
+  }
+
+.icon-block {
+  flex-direction: column;
+}
+
+.icon {
+  display: flex;
+  width: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+
+/* ПОШТА */
+
