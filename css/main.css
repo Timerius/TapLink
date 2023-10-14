@@ -180,6 +180,10 @@ h1 {
 .album {
   width: 120px;
 }
+.i-b {
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
 
 /* ЮТУБ СЕКЦІЯ */
